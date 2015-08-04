@@ -25,7 +25,7 @@ addons:
       name: "grzegorzmazur/yacas"
       description: "Computer calculations made easy"
     notification_email: teoretyk@gmail.com
-    build_command_prepend: "cmake"
+    build_command_prepend: "cmake ."
     build_command: "make"
     branch_pattern: coverity_scan
     
