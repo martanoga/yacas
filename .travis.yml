@@ -29,6 +29,8 @@ addons:
     build_command: "make"
     branch_pattern: coverity_scan
     
+script: if [ "${COVERITY_SCAN_BRANCH}" != 1 ]; then make ; fi
+
 branches:
   except:
     - gh_pages
